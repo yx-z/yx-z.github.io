@@ -9,6 +9,7 @@
         <link href="assets/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
         <link href="assets/css/flaticon.css" type="text/css" rel="stylesheet" media="screen,projection"/>
         <link href="assets/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+        <link rel="stylesheet" href="assets/css/animate.css">  
 </head>
 
 <body>
@@ -26,7 +27,7 @@
     </div>
 </section>
 
-<div class="container">
+<div class="container wow fadeInUp content-card">
 	<div class="section content">
 		<div class="row">
             <div class="col s12 m12">
@@ -74,19 +75,19 @@
                     </div>
                     <h6>Java</h6>
                     <div class="progress">
-                        <div class="progress-bar" style="width: 70%;"></div>
+                        <div class="progress-bar wow fadeInUp" style="width: 70%;"></div>
                     </div>
                     <h6>Web Design</h6>
                     <div class="progress">
-                        <div class="progress-bar" style="width: 60%;"></div>
+                        <div class="progress-bar wow fadeInUp" style="width: 60%;"></div>
                     </div>
                     <h6>Web Frontend</h6>
                     <div class="progress">
-                        <div class="progress-bar" style="width: 50%;"></div>
+                        <div class="progress-bar wow fadeInUp" style="width: 50%;"></div>
                     </div>
                     <h6>Android</h6>
                     <div class="progress">
-                        <div class="progress-bar" style="width: 30%;"></div>
+                        <div class="progress-bar wow fadeInUp" style="width: 30%;"></div>
                     </div>
                     
                     <div class="block social">
@@ -150,7 +151,7 @@
                     </h4>
                     <div class="block">
                         <div class="row">
-                            <div class="col m6 s12">
+                            <div class="col m6 s12 wow fadeInUp content-card">
                                 <div class="card">
                                     <div class="card-image">
                                         <img src="assets/images/github.png" alt="Playground">  
@@ -173,7 +174,7 @@
                                 </div>
                             </div>
 
-                            <div class="col m6 s12">
+                            <div class="col m6 s12 wow fadeInUp content-card">
                                 <div class="card">
                                     <div class="card-image">
                                         <img src="assets/images/projecteuler.png" alt="ProjectEuler">
@@ -195,7 +196,7 @@
                                 </div>
                             </div>
 
-                            <div class="col m6 s12">
+                            <div class="col m6 s12 wow fadeInUp content-card">
                                 <div class="card">
                                     <div class="card-image">
                                         <img src="assets/images/what2wear.jpg" alt="what2wear">
@@ -217,7 +218,7 @@
                                 </div>
                             </div>       
                                     
-                            <div class="col m6 s12">
+                            <div class="col m6 s12 wow fadeInUp content-card">
                                 <div class="card">
                                     <div class="card-image">
                                         <img src="assets/images/website.jpg" alt="website"/>
@@ -254,6 +255,35 @@
 <script src="assets/js/hammer.min.js"></script>
 <script src="assets/js/cards.js"></script>
 <script src="assets/js/init.js"></script>
+
+<!-- Animations -->
+<script src="assets/js/wow.min.js"></script>
+<script>
+    new WOW().init();
+</script>
+        
+<!-- Scrollwheel Smoothing -->
+<script>
+    $(function()
+    {   
+        var $window = $(window);
+        var scrollTime = 0.2;
+        var scrollDistance = 270;
+        $window.on("mousewheel DOMMouseScroll", function(event)
+        {
+
+            event.preventDefault(); 
+            var delta = event.originalEvent.wheelDelta/120 || -event.originalEvent.detail/3;
+            var scrollTop = $window.scrollTop();
+            var finalScroll = scrollTop - parseInt(delta*scrollDistance);
+            TweenMax.to($window, scrollTime, 
+            {
+                scrollTo : { y: finalScroll, autoKill:true }, ease: Power1.easeOut, overwrite: 5     
+                
+            });
+        });
+    });
+</script>
 
 </body>
 </html>
