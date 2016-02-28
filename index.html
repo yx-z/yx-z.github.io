@@ -278,7 +278,33 @@
                                                     AKA This Site
                                                     <i class="mdi-navigation-close right"></i>
                                                 </span>
-                                                <p>I just want to show you this funny recursive picture :-)</p>
+                                                <p>I just want to show you this funny recursive picture lol. :-)</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col m6 s12 wow fadeInUp">
+                                    <div class="card">
+                                        <div class="card-image">
+                                            <img src="assets/images/conttack.png" alt="Conttack">
+                                            <div class="card-content">
+                                                <span class="card-title grey-text darken-4">
+                                                    Conttack
+                                                    <i class="mdi-navigation-more-vert right"></i>
+                                                </span>
+                                                <p>
+                                                    <a href="https://github.com/yx-z/Conttack">wanna know more</a>
+                                                </p>
+                                            </div>
+                                            <div class="card-reveal">
+                                                <span class="card-title grey-text darken-4">
+                                                    Android Project
+                                                    <i class="mdi-navigation-close right"></i>
+                                                </span>
+                                                <p>
+                                                A <del>cool</del> time-killing Android app/game that generates a "Battle" among your contacts.
+                                                </p>
                                             </div>
                                         </div>
                                     </div>
@@ -312,7 +338,6 @@
         var scrollDistance = 270;
         $window.on("mousewheel DOMMouseScroll", function(event)
         {
-
             event.preventDefault();
             var delta = event.originalEvent.wheelDelta/120 || -event.originalEvent.detail/3;
             var scrollTop = $window.scrollTop();
@@ -320,7 +345,6 @@
             TweenMax.to($window, scrollTime,
             {
                 scrollTo : { y: finalScroll, autoKill:true }, ease: Power1.easeOut, overwrite: 5
-
             });
         });
     });
