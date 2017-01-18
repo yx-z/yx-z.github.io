@@ -1567,6 +1567,9 @@
 		max-width: 100%;
 		margin-top: 2rem;
 		text-align: center;
+		background-color: rgba(255, 255, 255, 0.05);
+		padding-top: 5px;
+		padding-bottom: 5px;
 	}
 
 		#footer .copyright {
