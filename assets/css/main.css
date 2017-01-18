@@ -1650,7 +1650,6 @@ body.is-loading #footer {
     z-index: 2;
     text-align: center;
     transition: background 250ms cubic-bezier(0.25, 0.25, 0.66, 1.65), color 250ms, width 250ms cubic-bezier(0.25, 0.25, 0.66, 1.65), padding 250ms cubic-bezier(0.25, 0.25, 0.66, 1.65);
-    overflow-y: scroll;
 }
 .desc:after {
     display: block;
@@ -1694,7 +1693,6 @@ body.is-loading #footer {
 .showcase--inverted .desc {
     left: 0;
     right: auto;
-    overflow-y: scroll;
 }
 .showcase--inverted .desc:after {
     left: auto;
