@@ -4,6 +4,9 @@
         <title>Yx-Z's Site</title>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		
+        <link rel="shortcut icon" href="favicon.ico" />
+		
         <link rel="stylesheet" href="assets/css/main.css" />
         <!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
         <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
@@ -44,13 +47,63 @@
                 <!-- Resume -->
                 <article id="resume">
                     <h2 class="major">Resume</h2>
-					<iframe src="https://drive.google.com/viewerng/viewer?embedded=true&url=https://raw.githubusercontent.com/yx-z/yx-z.github.io/master/resume.pdf" height="450vh" width="100%" style="text-align: center;"></iframe>
+                    <iframe src="https://drive.google.com/viewerng/viewer?embedded=true&url=https://raw.githubusercontent.com/yx-z/yx-z.github.io/master/resume.pdf" height="450vh" width="100%" style="text-align: center;"></iframe>
                 </article>
 
                 <!-- Projects -->
                 <article id="project">
                     <h2 class="major">Projects</h2>
-                    <p>To be updated ...<br/>Please see links in <a href="#resume">resume</a> for now. Thank you.</p>
+                    <div class="showcase">
+                        <div class="thumbnail thumbnail--awesome" id="weather">
+                            <div class="thumbnail__overlay">
+                                <a class="btn" href="https://github.com/yx-z/MathResearch/blob/master/weather-analysis">DETAILS</a>
+                            </div>
+                        </div>
+                        <div class="desc">
+                            <p>Math Research</p>
+                            <h2>Weather Analysis</h2>
+                            <p>Compare the accuracy of forecasts predicted by statistical models and online sites for 4000+ locations.</p>
+                        </div>
+                    </div>
+                   
+                    <div class="showcase showcase--inverted">
+						<div class="thumbnail thumbnail--awesome" id="asnd">
+                            <div class="thumbnail__overlay">
+                                <a class="btn" href="https://github.com/yx-z/ASweetNightDream">PLAY</a>
+                            </div>
+                        </div>
+                        <div class="desc">
+                            <p>Mini Game</p>
+                            <h2>Sweet Night Dream</h2>
+                            <p>An online visual novel inspired by a dream. Powered by JavaScript. Check it out!</p>
+                        </div>
+                    </div>
+					
+					<div class="showcase">
+                        <div class="thumbnail thumbnail--awesome" id="project-euler">
+                            <div class="thumbnail__overlay">
+                                <a class="btn" href="https://github.com/yx-z/ProjectEuler">MORE</a>
+                            </div>
+                        </div>
+                        <div class="desc">
+                            <p>CS &amp; Math</p>
+                            <h2>Project Euler</h2>
+                            <p>Project Euler is an interesting Math puzzle collection for coders. And I have been trying to solve 70+ questions.<p>
+                        </div>
+                    </div>
+					
+					<div class="showcase showcase--inverted">
+						<div class="thumbnail thumbnail--awesome" id="what2wear">
+                            <div class="thumbnail__overlay">
+                                <a class="btn" href="https://github.com/what2wear/what2wear">ON GITHUB</a>
+                            </div>
+                        </div>
+                        <div class="desc">
+                            <p>Group Project</p>
+                            <h2>What2Wear</h2>
+							<p>Available for Web (frontend with Bootstrap) &amp; Android! It helps you decide what to wear based on weather and personal preferences.</p>
+                        </div>
+                    </div>
                 </article>
 
                 <!-- Contact -->
@@ -93,5 +146,6 @@
         <script src="assets/js/util.js"></script>
         <script src="assets/js/main.js"></script>
         <script src="assets/js/type.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
     </body>
 </html>
