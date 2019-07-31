@@ -1599,8 +1599,8 @@ body.is-loading #footer {
     background: transparent;
 }
 
-#weather {
-    background-image: url("../projects/weather.jpg");
+#conn {
+    background-image: url("../projects/conn.jpg");
 }
 
 #asnd {
